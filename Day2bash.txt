@@ -1,0 +1,96 @@
+Day2
+
+=> Single line comment 
+
+   -use #
+   
+   example:
+   
+   -code:
+   #!/bin/bash
+   echo "This is single line comment"
+   #echo "My password is singleline"
+   
+   -execute
+    This is single line comment
+    
+    
+    
+ => Multi-line comment 
+    -use <<message 
+    -----------------
+    message
+    
+    -code
+    #!/bin/bash
+    echo "This is Multiline comment"
+    <<secret_message
+    my password is password and account numberis
+    xxxx
+    secret_message
+    
+    =execute
+    This is multiline comment
+    
+    
+    
+  =>Variable
+    -single word variable
+    
+    -script
+    #!/bin/bash
+    NAME="Kabadi"
+    echo $NAME
+    
+    -execute
+    Kabadi
+    
+    
+   -Multi word variable
+   
+   -script
+   #!/bin/bash
+   X='My account'
+   Y='Is xxxx'
+   Z="${X} ${Y}"
+   echo "$Z"
+   
+   -execute
+   My sccount Is xxxx
+   
+   
+=>Check user 
+
+   -script
+   
+   #!/bin/bash
+   VAR=$USER
+   echo "$VAR"
+   
+   -execute
+   your username
+   
+=>Check home path
+
+  -script
+  #!/bin/bash
+  
+  VAR_PATH=$HOME
+  echo "$VAR_PATH"
+  
+  -execute
+  home/valya
+  
+  
+=> Check hostname
+
+-script
+  #!/bin/bash
+  VAR=$HOSTNAME
+  echo "$VAR"
+  
+  -execute 
+  kabadi
+  
+  
+=>
