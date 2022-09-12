@@ -1,0 +1,28 @@
+Day3 
+
+=> Avoid expansion
+
+  -script
+  #!/bin/bash
+  
+  echo "\$HOME"
+  
+  -execute
+  
+  $HOME
+  
+  
+=> write file in HOME directory using $home variable
+
+  -script
+  #!/bin/bash
+  
+  cd $HOME
+  echo "Secret message" > ./secret.txt
+  
+  cat secret.txt
+  
+  -execute
+  Secret message
+  
+  
